@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <h1 id="title" class="text-center">Cheese</h1>
+      <p id="description" class="text-center">This is a form about cheese. Whether you are a big fan of cheese or not, please fill this form out.</p>
+      <link rel="stylesheet" href="styles.css" />
+  </head>
+  <form id="survey-form">
+    <div>
+      <label id="name-label">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required="">
+    </div>
+    <div>
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required="">
+    </div>
+    <div>
+      <label id="number-label">Amount of cheese eaten today</label>
+      <input class="survey-form" type="number" name="amount-of-cheese" min="0" max="2147483647" id="number" placeholder="Enter amount of cheese" required="">
+    </div>
+    <div>
+      <p>Reasons why you believe cheese is best</p>
+      <label>
+        <input value="tastes good" type="checkbox" class="input-checkbox">
+        Tastes good
+      </label>
+      <label>
+        <input value="tastes amazing" type="checkbox" class="input-checkbox">
+        Tastes amazing
+      </label>
+      <label>
+        <input value="oooo cheese" type="checkbox" class="input-checkbox">
+        oooo cheese
+      </label>
+      <label>
+        <input value="I love it" type="checkbox" class="input-checkbox">
+        I love it
+      </label>
+    </div>
+    <div>
+      <p>What is your favorite type of cheese?</p>
+      <select id="dropdown" required="">
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="mozzarella">Mozzarella</option>
+        <option value="feta">Feta</option>
+        <option value="ricotta">Ricotta</option>
+        <option value="parmigiano">Parmigiano</option>
+        <option value="gorgonzola">Gorgonzola</option>
+        <option value="cheddar">Cheddar</option>
+        <option value="gouda">Gouda</option>
+        <option value="idk">I don't have a favorite</option>
+        <option value="other">You somehow don't like any of the most popular cheeses in the world ( your favorite cheese isn't on here)</option>
+      </select>
+    </div>
+    <div>
+      <p>Do you consume cheese on a daily basis?</p>
+      <input  name="something" value="yes" type="radio" class="input-radio" checked="">
+      Yes
+      <input  name="something" value="no" type="radio" class="input-radio" checked="">
+      No
+    </div>
+    <div>
+      <p>How can I improve my cheese survey?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your suggestions here..."></textarea>
+    </div>
+    <div>
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</html>
